@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { X, Heart } from "lucide-react";
 
 const photos = [
@@ -79,9 +80,9 @@ export function Gallery() {
             </div>
 
             {/* Lightbox */}
-            {selectedPhoto && (
+            {selectedPhoto && createPortal(
                 <div
-                    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+                    className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
                     onClick={() => setSelectedPhoto(null)}
                 >
                     <button
@@ -90,7 +91,7 @@ export function Gallery() {
                             e.stopPropagation();
                             setSelectedPhoto(null);
                         }}
-                        className="absolute top-4 right-4 md:top-8 md:right-8 text-white/70 hover:text-white transition-colors p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-md z-[110] cursor-pointer"
+                        className="absolute top-4 right-4 md:top-8 md:right-8 text-white/70 hover:text-white transition-colors p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-md z-[1010] cursor-pointer"
                     >
                         <X size={32} />
                     </button>
@@ -107,7 +108,8 @@ export function Gallery() {
                             className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
                         />
                     </motion.div>
-                </div>
+                </div>,
+                document.body
             )}
         </section>
     );
