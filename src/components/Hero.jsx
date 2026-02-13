@@ -89,7 +89,10 @@ export function Hero() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [0, -10, 0] }}
-                transition={{ delay: 2, duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                    opacity: { delay: 2, duration: 1 },
+                    y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                }}
                 className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none z-30"
             >
                 <div className="w-1 h-3 rounded-full bg-rose-400/50 mb-1" />
