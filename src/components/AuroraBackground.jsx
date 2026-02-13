@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { cn } from "../lib/utils";
 
-export function AuroraBackground({ className, children }) {
+export function AuroraBackground({ className, children, ...props }) {
     return (
-        <div className={cn("relative flex flex-col h-[100vh] bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg", className)}>
+        <div className={cn("relative flex flex-col h-[100vh] bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg", className)} {...props}>
             <div className="absolute inset-0 overflow-hidden">
                 <div
                     className={cn(
