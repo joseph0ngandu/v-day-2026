@@ -27,7 +27,7 @@ function App() {
 
       {/* Main Site - Always Rendered but hidden initially */}
       <div
-        className={`fixed inset-0 transition-opacity duration-1000 ease-in-out overflow-y-auto ${hasEntered ? 'opacity-100 z-10' : 'opacity-0 -z-10'}`}
+        className={`fixed inset-0 transition-opacity duration-1000 ease-in-out overflow-y-auto scroll-smooth ${hasEntered ? 'opacity-100 z-10' : 'opacity-0 -z-10'}`}
       >
         <MusicPlayer autoPlay={hasEntered} />
         <Navigation />
