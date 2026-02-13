@@ -81,36 +81,8 @@ And I promise you, I see you. Fully.
 
 And I still choose you.`
     },
-    {
-        title: "Peace",
-        content: `You know what’s crazy?
 
-You’re fun. You’re funny. You can be chaotic.
 
-But somehow… you’re also my peace.
-
-Being around you doesn’t feel heavy. It doesn’t feel forced. It feels easy.
-
-And in a world where everything is loud and complicated, you being my calm is something I’ll never take lightly.
-
-Thank you for being a safe place I didn’t even know I needed.`
-    },
-    {
-        title: "If I’m Honest",
-        content: `If I’m honest…
-
-I didn’t expect to care about you this much.
-
-But here I am.
-
-Caring about your day. Caring about your mood. Caring about what makes you smile.
-
-I catch myself wanting to protect you, motivate you, build with you.
-
-Not because I have to.
-
-But because I want to.`
-    },
     {
         title: "I’m Proud of You",
         content: `I don’t say this enough.

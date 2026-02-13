@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Star, Calendar, Music, Coffee } from "lucide-react";
+import { RelationshipTimer } from "./RelationshipTimer";
 
 // Generic milestones that fit a 19-month timeline
 const milestones = [
@@ -28,9 +29,9 @@ const milestones = [
         icon: <Calendar className="w-5 h-5 text-white" />
     },
     {
-        date: "Month 19 (Today)",
+        date: "Today",
         title: "Still Choosing You",
-        description: "19 months later, and you’re still my favorite person.",
+        description: "Every single day since then, you’re still my favorite person.",
         icon: <Heart className="w-5 h-5 text-white fill-current" />
     },
 ];
@@ -46,7 +47,7 @@ export function Timeline() {
                     className="text-center mb-20"
                 >
                     <h2 className="text-4xl md:text-6xl font-serif text-rose-800 mb-4">Our Story</h2>
-                    <p className="text-rose-500 font-medium tracking-wide uppercase">19 Months of Magic</p>
+                    <p className="text-rose-500 font-medium tracking-wide uppercase">Rewriting our story every day</p>
                 </motion.div>
 
                 <div className="relative">
@@ -96,7 +97,8 @@ export function Timeline() {
                     whileInView={{ opacity: 1 }}
                     className="text-center mt-12"
                 >
-                    <p className="text-rose-400 italic">To be continued...</p>
+                    <p className="text-rose-400 italic mb-8">To be continued...</p>
+                    <RelationshipTimer startDate="2024-08-22T14:34:00" />
                 </motion.div>
             </div>
         </section>
