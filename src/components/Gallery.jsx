@@ -54,8 +54,8 @@ export function Gallery() {
             {/* Infinite Marquee */}
             <div className="relative w-full overflow-hidden py-10">
                 {/* Gradient Masks for fade effect */}
-                <div className="absolute top-0 left-0 w-32 h-full z-10 bg-gradient-to-r from-[#fff0f5] to-transparent pointer-events-none" />
-                <div className="absolute top-0 right-0 w-32 h-full z-10 bg-gradient-to-l from-[#fff0f5] to-transparent pointer-events-none" />
+                <div className="absolute top-0 left-0 w-8 md:w-32 h-full z-10 bg-gradient-to-r from-[#fff0f5] to-transparent pointer-events-none" />
+                <div className="absolute top-0 right-0 w-8 md:w-32 h-full z-10 bg-gradient-to-l from-[#fff0f5] to-transparent pointer-events-none" />
 
                 <div className="flex w-max">
                     <motion.div
