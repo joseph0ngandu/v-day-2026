@@ -22,7 +22,7 @@ export function Navigation() {
                     {["Home", "Gallery", "Letter"].map((item, index) => (
                         <motion.a
                             key={item}
-                            href={item === "Home" ? "#" : `#${item.toLowerCase()}`}
+                            href={item === "Home" ? "#hero" : `#${item.toLowerCase()}`}
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5 + index * 0.1 }}
