@@ -13,7 +13,7 @@ You don’t even realize how powerful you are. You’ve been through things that
 
 I admire that about you more than you know.
 
-You’re small in height but huge in heart. And I don’t just love you — I respect you.
+You’re small in height but huge in heart. And I don’t just love you, I respect you.
 
 Thank you for being you.`
     },
@@ -41,7 +41,7 @@ I’m not here to add chaos to your life. I’m here to add peace.
 
 You deserve softness. You deserve consistency. You deserve love that doesn’t confuse you.
 
-And I choose you — calmly, confidently, and completely.`
+And I choose you, calmly, confidently, and completely.`
     },
     {
         title: "Future Us",
@@ -59,7 +59,7 @@ I don’t just want moments with you. I want a story with you.`
         title: "You Don’t Even Realize",
         content: `I don’t think you understand what you do to me.
 
-You’ll just be existing — talking, laughing, being dramatic for no reason — and I’ll just sit there thinking, “Yeah. That’s my girl.”
+You’ll just be existing, talking, laughing, being dramatic for no reason, and I’ll just sit there thinking, “Yeah. That’s my girl.”
 
 It’s not even about big moments. It’s the small ones. The random voice notes. The way you say my name. The way you act tough but still want attention.
 
@@ -73,11 +73,11 @@ And that’s dangerous… because it means I’m not going anywhere.`
 
 But you? You feel different.
 
-You don’t force anything. You don’t beg for attention. You’re just naturally you — and somehow that’s enough to stand out.
+You don’t force anything. You don’t beg for attention. You’re just naturally you, and somehow that’s enough to stand out.
 
 You have this quiet strength about you. Even when you don’t see it.
 
-And I promise you — I see you. Fully.
+And I promise you, I see you. Fully.
 
 And I still choose you.`
     },
@@ -129,7 +129,7 @@ And I do.`
 
 Your laugh does something to me.
 
-Not just the sound of it — but what it represents. It means you’re relaxed. It means you feel safe enough to be yourself. It means you’re happy in that moment.
+Not just the sound of it, but what it represents. It means you’re relaxed. It means you feel safe enough to be yourself. It means you’re happy in that moment.
 
 And if I can be part of the reason you laugh like that, then I’m doing something right.
 
@@ -165,13 +165,13 @@ And real is what I want.`
     },
     {
         title: "You Deserve More",
-        content: `Sometimes I just look at you and think — you deserve more softness than life has given you.
+        content: `Sometimes I just look at you and think, you deserve more softness than life has given you.
 
 More reassurance.
 More calm.
 More love without conditions.
 
-I may not be perfect, but I promise you this —
+I may not be perfect, but I promise you this,
 I will always try to be better for you.`
     },
     {
