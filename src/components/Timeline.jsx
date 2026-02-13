@@ -29,7 +29,7 @@ const milestones = [
         icon: <Calendar className="w-5 h-5 text-white" />
     },
     {
-        date: "Today",
+        date: "Month 17",
         title: "Still Choosing You",
         description: "Every single day since then, you’re still my favorite person.",
         icon: <Heart className="w-5 h-5 text-white fill-current" />
@@ -97,7 +97,6 @@ export function Timeline() {
                     whileInView={{ opacity: 1 }}
                     className="text-center mt-12"
                 >
-                    <p className="text-rose-400 italic mb-8">To be continued...</p>
                     <RelationshipTimer startDate="2024-08-22T14:34:00" />
                 </motion.div>
             </div>
