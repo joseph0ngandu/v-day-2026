@@ -85,13 +85,14 @@ export function Gallery() {
                     onClick={() => setSelectedPhoto(null)}
                 >
                     <button
+                        type="button"
                         onClick={(e) => {
                             e.stopPropagation();
                             setSelectedPhoto(null);
                         }}
-                        className="fixed top-6 right-6 text-white/70 hover:text-white transition-colors p-3 rounded-full hover:bg-white/10 z-[110] cursor-pointer"
+                        className="absolute top-4 right-4 md:top-8 md:right-8 text-white/70 hover:text-white transition-colors p-2 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-md z-[110] cursor-pointer"
                     >
-                        <X size={36} />
+                        <X size={32} />
                     </button>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
