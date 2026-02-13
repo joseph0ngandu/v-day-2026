@@ -8,7 +8,6 @@ export function MusicPlayer({ autoPlay = false }) {
 
     useEffect(() => {
         if (autoPlay && audioRef.current) {
-            // Attempt auto-play when component mounts if autoPlay is true
             const playAudio = async () => {
                 try {
                     audioRef.current.volume = 0.4;
@@ -21,6 +20,19 @@ export function MusicPlayer({ autoPlay = false }) {
             };
             playAudio();
         }
+
+        // Handle visibility change to stop music when tab is closed/minimized
+        const handleVisibilityChange = () => {
+            if (document.hidden && audioRef.current) {
+                audioRef.current.pause();
+                setIsPlaying(false);
+            }
+        };
+
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        return () => {
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
+        };
     }, [autoPlay]);
 
     const toggleMusic = () => {
