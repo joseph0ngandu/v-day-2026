@@ -16,7 +16,7 @@ const movements = [
     {
         tag: "And you",
         title: "You're blooming",
-        body: "I watch you soften and strengthen at the very same time, stepping fully into yourself — growing, glowing, becoming the best version of you.",
+        body: "I watch you soften and strengthen at the very same time, stepping fully into yourself, growing, glowing, becoming the best version of you.",
     },
     {
         tag: "Right now",
