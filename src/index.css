@@ -48,3 +48,59 @@
     linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
     url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
 }
+
+/* Warm paper texture for the present-day dawn chapter */
+.paper-texture-warm {
+  background-image:
+    linear-gradient(rgba(255, 250, 244, 0.94), rgba(255, 247, 237, 0.94)),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.12'/%3E%3C/svg%3E");
+}
+
+/* ---- Present-day (sunrise / dawn) chapter animations ---- */
+
+/* Twinkling stars in the pre-dawn sky */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; transform: scale(0.8); }
+  50%      { opacity: 0.9;  transform: scale(1.15); }
+}
+.animate-twinkle {
+  animation: twinkle var(--twinkle-duration, 4s) ease-in-out infinite;
+}
+
+/* Slow rotating sun rays */
+@keyframes sun-rays {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-sun-rays {
+  animation: sun-rays 90s linear infinite;
+}
+
+/* Gentle breathing glow for the sun core / portal */
+@keyframes dawn-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%      { opacity: 0.9;  transform: scale(1.06); }
+}
+.animate-dawn-pulse {
+  animation: dawn-pulse 6s ease-in-out infinite;
+}
+
+/* Shimmering gold gradient text */
+@keyframes gold-shimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #b45309, #f59e0b, #fcd34d, #f59e0b, #b45309);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gold-shimmer 5s linear infinite;
+}
+
+/* Warm custom scrollbar inside dawn letter cards */
+.scroll-warm::-webkit-scrollbar { width: 6px; }
+.scroll-warm::-webkit-scrollbar-thumb { background: #fbbf24; border-radius: 3px; }
+.scroll-warm::-webkit-scrollbar-track { background: transparent; }

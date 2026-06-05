@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Pause, Music } from 'lucide-react';
 
-export function MusicPlayer({ autoPlay = false }) {
+export function MusicPlayer({ autoPlay = false, src = "/music.mp3" }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
 
@@ -35,6 +35,28 @@ export function MusicPlayer({ autoPlay = false }) {
         };
     }, [autoPlay]);
 
+    // Swap tracks between chapters. Changing the <audio> src already pauses/resets
+    // the element, so we can't read audio.paused to know if it "was" playing — that
+    // always reads paused here. Instead we just load the new track and play it: the
+    // chapter switch only ever happens right after a user gesture (holding the
+    // portal sun), so autoplay is allowed. The first mount is skipped — chapter
+    // one's playback is handled by the autoPlay effect above.
+    const isFirstSrc = useRef(true);
+    useEffect(() => {
+        const audio = audioRef.current;
+        if (!audio) return;
+        if (isFirstSrc.current) {
+            isFirstSrc.current = false;
+            return;
+        }
+        audio.load();
+        audio.volume = 0.4;
+        audio
+            .play()
+            .then(() => setIsPlaying(true))
+            .catch(() => setIsPlaying(false));
+    }, [src]);
+
     const toggleMusic = () => {
         if (audioRef.current) {
             if (isPlaying) {
@@ -48,7 +70,7 @@ export function MusicPlayer({ autoPlay = false }) {
 
     return (
         <div className="fixed bottom-8 right-8 z-[100] flex flex-col items-center">
-            <audio ref={audioRef} src="/music.mp3" loop />
+            <audio ref={audioRef} src={src} loop />
 
             <motion.button
                 whileHover={{ scale: 1.1 }}
