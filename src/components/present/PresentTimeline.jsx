@@ -6,7 +6,7 @@ const movements = [
     {
         tag: "Quietly",
         title: "We did the work",
-        body: "Apart, in our own ways, we both started healing — looking inward, learning, growing into people who could love each other better.",
+        body: "Apart, in our own ways, we both started healing, looking inward, learning, growing into people who could love each other better.",
     },
     {
         tag: "Day by day",
